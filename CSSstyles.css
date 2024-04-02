@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "body"
+    "footer";
+}
+
+body{
+    background: beige;
+}
+
+#layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "header"
+        "body"
+        "outcomes";
+    text-align: center;
+    margin: 1.5rem;
+    
+}
+
+
+.store-logo{
+    
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    border: solid 10px white; 
+}
+
+
+
+.nav-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(149, 149, 62);
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+.nav-menu a:hover{
+    background: olive;
+    color: #fff;
+}
+.nav-menu ul{
+    list-style: none;
+    display: flex ;
+
+}
+.nav-menu li{
+    position: relative;   
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu li:hover .dropdown-1 > li{
+    top: 0;
+    display: block;
+}
+  
+.dropdown-1 li{
+    display: none;
+    position: relative;
+}
+
+.dropdown-1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.welcome-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    margin-bottom: 50px;
+    
+}
+.welcome-container2{
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.welcome-image{
+    margin-left: calc(15%/2);
+    margin-right: calc(15%/2);
+    display: block;
+    width: 85%;
+    height: 100%;
+    border: solid 10px white; 
+
+}
+
+
+#header{
+    grid: header;
+
+}
+
+.header{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+div h1{
+
+    background-image: url('Images/Necklaces/GreenNecklace.png');
+    font-family:Cambria, Cochin, Georgia, Times, serif;
+    margin-top: 5px;
+    color: lavender;
+    height: 75px;
+    padding-top: 15px;
+}
+
+div h2{
+    font-family:Cambria, Cochin, Georgia, Times, serif;
+    margin-top: 5px;
+    color:  rgb(149, 149, 62);
+    margin-bottom: 10px;
+    
+}
+
+div h3{
+    
+    font-family:Cambria, Cochin, Georgia, Times, serif;
+    color:  rgb(149, 149, 62);
+    padding-bottom: 15px;
+}
+
+.image{
+    position: relative;
+    overflow: hidden;
+}
+
+#body{
+    display: block;
+    grid-area: body;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+footer{
+    
+    padding: 50px;
+  
+}
+
+.link-logo{
+    display: block;
+    width: 4%;
+    margin-top: 20px;
+    margin-left: 48%;
+    margin-right: 48%;
+}
+
+.divbox{
+    width: 80%;
+    height: 30px;
+    background: rgb(149, 149, 62); 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/* Productlist code CSS
+/*
+/*
+*/
+
+.productlist{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    place-items: center;
+    margin: auto;
+    padding: 40px;
+    height: auto;
+    
+}
+
+.productbox{
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+}
+
+.productpic{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(251, 248, 248); 
+  
+}
+
+/* Selected item CSS
+/*
+*/
+
+.item-select-grid{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 1fr;
+    height: auto;
+}
+
+.selected-view {
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(251, 248, 248); 
+    height: auto;
+    
+}
+
+.itemtext{
+    grid-template-rows: repeat(1fr);
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.itemtext h2{
+    
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.itemtext h3{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+.itemtext h4{
+    padding: 0px 40px 0px 40px;
+    font-weight: normal;
+    color:  rgb(149, 149, 62);
+}
+
+.checkoutbutton{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 100%;
+    
+    margin-top: 40px;
+}
+
+.checkoutbutton a {
+    text-decoration: none;
+    color: lavender;
+    
+ }
+
+.checkoutbutton a h6{
+   font-size: 20px;
+    background-color: burlywood;
+    border-radius: 30px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.itemtext li{
+
+    
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-top: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, serif;
+    color:  rgb(149, 149, 62);
+}
+
+.listImage{
+    margin: 2px;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+#left{
+    grid-area: left;
+}
+
+#right{
+    grid-area: right;;
+}
+
+
+
+/* Size Chart CSS
+/*
+*/
+
+.chart-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    margin: auto;
+    height: auto;
+    grid-gap: 40px;
+}
+
+tr{
+    border-collapse: collapse;
+}
+
+.border{
+    border: solid;
+    width: 95px;
+    height: 50px;
+}
+
+
+table{  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 5em;
+}
+
+.necklace-chart{
+    width: 100%;
+}
+
+.ring-size{
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+/*  About us CSS
+/*
+/*
+/*
+*/
+
+
+.about-us-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    place-items: center;
+    padding:40px;
+    width: 100%;
+
+}
+
+.about-us-container h3{
+    padding: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: normal;
+    
+}
+
+.about-us-pic{
+    display: block;
+    margin: auto;
+    width: 400px;
+    
+}
+
+.contact-us{
+    padding-top: 60px;
+    
+    font-size: 25px;
+}
+
+/* Checkout Form CSS
+/*
+/*
+/*
+/*
+*/
+
+
+.contact-box{
+    border-top: #566417;
+    border-top-style: solid;
+    border-bottom-color: #566417;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+}
+
+.inner{
+    display: block;
+}
+
+.input-group{
+    display: block;
+    margin-bottom: 20px
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .productlist{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    div h2{
+        font-size:13px;
+    }
+
+    div h3{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+
+    .productlist{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .item-select-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-area: "left right";
+    }
+    
+}
+
+@media screen and (min-width:901px) {
+
+    .productlist{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    body{
+        padding:40px
+    }
+
+    .item-select-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-area: "left right";
+    }
+}
+
+
+
